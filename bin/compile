@@ -67,7 +67,7 @@ mkdir -p "$1/.profile.d"
 cat <<'EOF' >"$1/.profile.d/graphviz.sh"
 PATH=/app/graphviz/bin:$PATH
 export GRAPHVIZ_DOT=/app/graphviz/bin/dot
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/app/graphviz
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}/app/graphviz
 EOF
 
 echo "Graphviz $version successfully installed to /app/graphviz/bin" | a
